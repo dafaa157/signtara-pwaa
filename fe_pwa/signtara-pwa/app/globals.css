@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warna Utama Signtara */
+  --color-signtara-orange: #F97316; 
+  --color-signtara-brown: #7C5542;
+  --color-signtara-cream: #FFF7ED;
+  --color-signtara-bg: #FCF9F5;
+
+  /* Warna Kartu / Aksen */
+  --color-signtara-green: #CEEACA;
+  --color-signtara-blue: #93C5E6;
+  --color-signtara-red: #F4C7C3;
+}
+
+body {
+  background-color: var(--color-signtara-bg);
+  color: var(--color-signtara-brown);
+}
