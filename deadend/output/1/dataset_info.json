@@ -1,0 +1,26 @@
+{
+  "total_samples": 250,
+  "feature_dim": 156,
+  "max_frames": 20,
+  "n_classes": 5,
+  "label_map": {
+    "0": "Belajar",
+    "1": "Maaf",
+    "2": "Makan",
+    "3": "Motor",
+    "4": "Saya"
+  },
+  "split": {
+    "train": 175,
+    "val": 61,
+    "test": 14
+  },
+  "per_class_total": {
+    "Belajar": 50,
+    "Maaf": 50,
+    "Makan": 50,
+    "Motor": 50,
+    "Saya": 50
+  },
+  "failed_videos": []
+}
