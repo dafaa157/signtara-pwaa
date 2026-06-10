@@ -10,7 +10,7 @@ interface HistoryItem {
   id: string;
   text: string;
   type: "tuli" | "dengar";
-  timestamp: number;
+  timestamp: string;
 }
 
 export default function TranslatePage() {
@@ -158,7 +158,7 @@ export default function TranslatePage() {
       id: Date.now().toString(),
       text: text.trim(),
       type,
-      timestamp: Date.now(),
+      timestamp: new Date().toLocaleTimeString("id-ID", { hour: '2-digit', minute: '2-digit' }) + ", " + new Date().toLocaleDateString("id-ID"),
     };
     setHistory(prev => [newItem, ...prev]);
     alert("Berhasil disimpan ke Riwayat!");
@@ -441,7 +441,7 @@ export default function TranslatePage() {
                            {item.type === 'tuli' ? 'Isyarat' : 'Suara'}
                          </span>
                          <span className="text-[10px] text-gray-400">
-                           {new Date(item.timestamp).toLocaleTimeString('id-ID', {hour: '2-digit', minute:'2-digit'})}
+                           {item.timestamp}
                          </span>
                       </div>
                       <p className="text-sm font-bold text-[#5C3A21] pr-8">{item.text}</p>
