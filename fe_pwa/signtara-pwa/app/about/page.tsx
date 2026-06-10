@@ -51,10 +51,10 @@ export default function AboutPage() {
             <div className="bg-white rounded-[1.5rem] p-5 shadow-sm flex flex-col gap-2">
               <div className="flex items-center gap-3">
                 <Layers size={20} className="text-[#5C3A21]" />
-                <h3 className="font-bold text-[#5C3A21]">CNN 1D</h3>
+                <h3 className="font-bold text-[#5C3A21]">LSTM Neural Net</h3>
               </div>
               <p className="text-xs text-[#5C3A21] font-medium leading-relaxed">
-                CNN 1D (Convolutional Neural Network) untuk mengekstraksi pola fitur spasial dari urutan gerakan secara cepat dan akurat.
+                Memahami urutan temporal isyarat untuk terjemahan yang lebih natural.
               </p>
             </div>
           </div>
